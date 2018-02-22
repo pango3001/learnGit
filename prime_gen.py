@@ -14,5 +14,3 @@ for x in range(2, higher_number):
             break
         else:
             x += 1
-    elif x == (higher_number - 1):
-        print("Sorry", prime_guess, "is not a prime number")
