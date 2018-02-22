@@ -14,9 +14,6 @@ comment
 name = "Jesse"
 print(name)     # outputs the string name (which is Jesse)
 
-user_input = input("Please type in a number: ")
-print("You typed: ", user_input)
-
 # Data types: Numbers, Strings, Lists, Tuples, Dictionaries
 
 
@@ -155,75 +152,7 @@ super_heroes = {"Batman" : "Bruce Wayne",
                 "Iron Man" : "Tony Stark",
                 "Hulk" : "Bruce Banner",
                 "Super Man" : "Clark Kent",
-                "Spider-man" : "Peter Parker"}
-
-print(super_heroes["Batman"])          # outputs Bruce Wayne
-print(super_heroes.get("Iron Man"))    # outputs Tony Stark
-del super_heroes["Hulk"]               # deletes "Hulk" : "Bruce Banner" from the dictionary
-
-super_heroes["Spider-man"] = "Deter Dark"        # changes "Spider-man" : "Peter Parker" to "Spider-man" : "Deter  Dark"
-
-print(len(super_heroes))        # outputs 4 (since Hulk was deleted)
-
-print(super_heroes.keys())      # outputs dict_keys(['Batman', 'Iron Man', 'Super Man', 'Spider-man'])
-print(super_heroes.values())    # outputs dict_values(['Bruce Wayne', 'Tony Stark', 'Clark Kent', 'Deter Dark'])
-
-
-#####################################################################
-# Conditionals
-# ==, !=, >, <, >=, <=
-#####################################################################
-
-age = 21
-
-if age > 16:
-    print("You are old enough to drive")
-else :
-    print("You are not old enough to drive")
-
-if age >= 21 :
-    print("You are old enough to drive a semi")
-elif age >= 16 :
-    print("You are old enough to drive a car")
-else:
-    print("You are not old enough to drive")
-
-if (age >= 1) and (age <= 18):                    # once condition is met, it will not check the rest of the conditions
-    print("You get to have a birthday party")
-elif (age == 21) or (age >= 65):
-    print("You get a birthday party")
-elif not (age == 30):
-    print("You do not get a party")
-else :
-    print("You get a party yay")
-
-
-#####################################################################
-# Loops
-#####################################################################
-
-for x in range(0,10):
-    print(x)
-    x += 1              # outputs 0 1 2 3 4 5 6 7 8 9 on separate lines
-
-for x in range(0,10):
-    print(x, end=" ")
-    x += 1              # outputs 0 1 2 3 4 5 6 7 8 9
-
-grocery_list = ['Soda', 'Pizza', 'Milk', 'Carrots', 'Bananas', 'Apples']
-
-for y in grocery_list:
-    print(y)            # outputs the items of the grocery list on separate lines
-
-for x in [2,4,6,8,10]:
-    print(x)            # outputs 2 4 6 8 10 on separate lines
-
-num_list = [[1, 2, 3], [10, 20, 30], [100, 200, 300]]
-
-for x in range(0,3):
-    for y in range(0,3):
-        print(num_list[x][y])
-
+                "Spiderman" : "Peter Parker"}
 
 
 
