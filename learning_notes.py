@@ -148,8 +148,55 @@ print(pi_tuples[4])         # outputs the item at index 4 which is 5
 # Dictionaries
 #####################################################################
 
+super_heroes = {"Batman" : "Bruce Wayne",
+                "Iron Man" : "Tony Stark",
+                "Hulk" : "Bruce Banner",
+                "Super Man" : "Clark Kent",
+                "Spider-man" : "Peter Parker"}
+
+print(super_heroes["Batman"])          # outputs Bruce Wayne
+print(super_heroes.get("Iron Man"))    # outputs Tony Stark
+del super_heroes["Hulk"]               # deletes "Hulk" : "Bruce Banner" from the dictionary
+
+super_heroes["Spider-man"] = "Deter Dark"        # changes "Spider-man" : "Peter Parker" to "Spider-man" : "Deter  Dark"
+
+print(len(super_heroes))        # outputs 4 (since Hulk was deleted)
+
+print(super_heroes.keys())      # outputs dict_keys(['Batman', 'Iron Man', 'Super Man', 'Spider-man'])
+print(super_heroes.values())    # outputs dict_values(['Bruce Wayne', 'Tony Stark', 'Clark Kent', 'Deter Dark'])
 
 
+#####################################################################
+# Conditionals
+#####################################################################
+
+age = 21
+
+if age > 16:
+    print("You are old enough to drive")
+else :
+    print("You are not old enough to drive")
+
+if age >= 21 :
+    print("You are old enough to drive a semi")
+elif age >= 16 :
+    print("You are old enough to drive a car")
+else:
+    print("You are not old enough to drive")
+
+if (age >= 1) and (age <= 18):                    # once condition is met, it will not check the rest of the conditions
+    print("You get to have a birthday party")
+elif (age == 21) or (age >= 65):
+    print("You get a birthday party")
+elif not (age == 30):
+    print("You do not get a party")
+else :
+    print("You get a party yay")
+
+
+#####################################################################
+# Loops
+#####################################################################
 
 
 
